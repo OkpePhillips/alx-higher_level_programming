@@ -20,8 +20,8 @@ if __name__ == "__main__":
         result = sub(a, b)
         print("{} - {} = {}".format(a, b, result))
     if args[1] == '*':
-        result = add(a, b)
+        result = mul(a, b)
         print("{} * {} = {}".format(a, b, result))
     if args[1] == '/':
-        result = add(a, b)
+        result = div(a, b)
         print("{} / {} = {}".format(a, b, result))
