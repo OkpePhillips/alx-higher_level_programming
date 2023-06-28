@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module with init and area methods"""
+
+
 class Square:
     """A square class with value and type validation as well
         as a public instance method called area"""

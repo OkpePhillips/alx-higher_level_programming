@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Module for square class with init method """
+
+
 class Square:
     """A square of a certain size. Size is private to
         each instance of Square"""

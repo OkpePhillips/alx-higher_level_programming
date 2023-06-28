@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module with size and position validation"""
+
+
 class Square:
     """A class with getter and setter, as well as value and type validation
         for the size attribute"""

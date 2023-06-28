@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module with class and type validation"""
+
+
 class Square:
     """A class with optional size initialisation, and type validation"""
     def __init__(self, size=0):
