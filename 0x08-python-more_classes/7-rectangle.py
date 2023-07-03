@@ -43,7 +43,7 @@ class Rectangle:
             rectangle = ''
         else:
             row = str(self.print_symbol) * self.__width
-            rectangle = (row + "\n")* self.__height
+            rectangle = (row + "\n") * self.__height
             rectangle = rectangle.rstrip("\n")
         return rectangle
 
