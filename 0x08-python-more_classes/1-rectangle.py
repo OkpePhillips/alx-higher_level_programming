@@ -56,8 +56,8 @@ class Rectangle:
         else:
             self.__width = value
 
-     @height.setter
-     def height(self, value):
+    @height.setter
+    def height(self, value):
         '''
         Sets the height of the rectangle
 
