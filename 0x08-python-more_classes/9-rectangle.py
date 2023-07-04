@@ -149,6 +149,4 @@ class Rectangle:
             raise TypeError('width must be an integer')
         elif size < 0:
             raise ValueError('width must be >= 0')
-        else:
-            square = cls(size, size)
-        return square
+        return cls(size, size)
