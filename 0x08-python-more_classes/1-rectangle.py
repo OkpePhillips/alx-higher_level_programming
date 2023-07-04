@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-'''
+"""
 Module containing a rectangle class
 The class has setter and getter methods for the
 various instance variables: width and height respectively
 
-'''
+"""
 
 
 class Rectangle:
