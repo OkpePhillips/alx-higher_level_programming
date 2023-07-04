@@ -145,4 +145,10 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         '''Creates a new Rectangle instance with equal width and height'''
-        return cls(size, size)
+        if type(size) != int:
+            raise TypeError('width must be an integer')
+        elif size < 0:
+            raise ValueError('width must be >= 0')
+        else:
+            square = cls(size, size)
+        return square
