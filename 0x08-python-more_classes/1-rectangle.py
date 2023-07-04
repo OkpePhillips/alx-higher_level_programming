@@ -15,7 +15,7 @@ class Rectangle:
     An appropriate exception is raised if the wrong type
     ... or value is provided for both width and height
     """
-    __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         '''
         Method to initialize an instance of a Rectangle.
         It defines two private attributes:
