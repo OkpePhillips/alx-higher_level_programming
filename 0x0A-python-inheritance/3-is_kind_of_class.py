@@ -10,7 +10,7 @@ def is_kind_of_class(obj, a_class):
     '''
     Function to check if an object is an instance of,
     or is an instance of a subclass of the specified class
-    
+
     Arguments:
         obj: a given object
         a_class: a class type

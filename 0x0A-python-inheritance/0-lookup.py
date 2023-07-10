@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' 
+'''
 This Module contains a function to get the attributes
 of an object
 '''
