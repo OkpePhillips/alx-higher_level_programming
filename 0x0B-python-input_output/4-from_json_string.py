@@ -3,6 +3,8 @@
 
 
 import json
+
+
 def from_json_string(my_str):
     '''
     Function that returns python data structre from json format
