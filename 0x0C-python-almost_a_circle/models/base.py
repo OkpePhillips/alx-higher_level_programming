@@ -3,6 +3,7 @@
 import json
 import csv
 import os.path
+from turtle import Screen, Turtle
 
 
 class Base:
@@ -23,6 +24,37 @@ class Base:
         if list_dictionaries is None or list_dictionaries == "[]":
             return "[]"
         return json.dumps(list_dictionaries)
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        ''' Method to draw the rectangle and square objects '''
+        screen = Screen()
+        screen.title("Almost a Circle in Python")
+        turtle = Turtle()
+
+        for rect in list_rectangles:
+            turtle.penup()
+            turtle.goto(rect.x, rect.y)
+            turtle.pendown()
+            turtle.forward(rect.width)
+            turtle.left(90)
+            turtle.forward(rect.height)
+            turtle.left(90)
+            turtle.forward(rect.width)
+            turtle.left(90)
+            turtle.forward(rect.height)
+            turtle.left(90)
+
+        for sqr in list_squares:
+            turtle.penup()
+            turtle.goto(sqr.x, sqr.y)
+            turtle.pendown()
+            for _ in range(4):
+                turtle.forward(sqr.width)
+                turtle.left(90)
+
+        turtle.hideturtle()
+        screen.mainloop()
 
     @classmethod
     def save_to_file(cls, list_objs):
