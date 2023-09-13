@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // Rectangle class with instance attributes
-class Rectangle {
+module.exports = class Rectangle {
   constructor (w, h) {
     if (w <= 0 || h <= 0) {
       return Object.create(Rectangle.prototype);
@@ -11,23 +11,24 @@ class Rectangle {
   }
 
   print () {
-    const text = 'X';
-    const rectangle = text.repeat(this.width);
-    while (this.height > 0) {
-      console.log(rectangle);
-      this.height--;
+    for (let i = 0; i < this.height; i++) {
+      let x = '';
+      for (let j = 0; j < this.width; j++) {
+        x += 'X';
+      }
+      console.log(x);
     }
   }
 
   rotate () {
-    const temp = this.width;
-    this.width = this.height;
-    this.height = temp;
+    const x = this.height;
+    this.height = this.width;
+    this.width = x;
+    console.log(`${this.height}`);
   }
 
   double () {
     this.width *= 2;
     this.height *= 2;
   }
-}
-module.exports = Rectangle;
+};
