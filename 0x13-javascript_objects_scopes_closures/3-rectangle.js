@@ -11,11 +11,12 @@ class Rectangle {
   }
 
   print () {
-    const text = 'X';
-    const rectangle = text.repeat(this.width);
-    while (this.height > 0) {
-      console.log(rectangle);
-      this.height--;
+    for (let i = 0; i < this.height; i++) {
+      let x = '';
+      for (let j = 0; j < this.width; j++) {
+        x += 'X';
+      }
+      console.log(x);
     }
   }
 }

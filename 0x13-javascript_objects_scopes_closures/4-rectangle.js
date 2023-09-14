@@ -24,7 +24,6 @@ module.exports = class Rectangle {
     const x = this.height;
     this.height = this.width;
     this.width = x;
-    console.log(`${this.height}`);
   }
 
   double () {
