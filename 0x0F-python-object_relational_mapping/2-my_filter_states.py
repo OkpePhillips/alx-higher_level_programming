@@ -17,8 +17,8 @@ if __name__ == '__main__':
                    states.id ASC".format(sys.argv[4]))
     states = cursor.fetchall()
 
-    for id, state in states:
-        print("({}, '{}')".format(id, state))
+    for state in states:
+        print(state))
 
     cursor.close()
     db.close()

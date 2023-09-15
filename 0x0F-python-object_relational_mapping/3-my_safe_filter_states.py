@@ -18,8 +18,8 @@ if __name__ == '__main__':
                    states.id ASC".format(state_name))
     states = cursor.fetchall()
 
-    for id, state in states:
-        print("({}, '{}')".format(id, state))
+    for state in states:
+        print(state))
 
     cursor.close()
     db.close()
