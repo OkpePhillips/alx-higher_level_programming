@@ -27,6 +27,7 @@ class State(Base):
     name = Column(String(128), nullable=False)
     cities = relationship("City", back_populates="state")
 
+
 if __name__ == '__main__':
     from sqlalchemy import create_engine
 
