@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script to list all states in a database
+Script to list all states in a database by
+querying the database
 """
 
 
