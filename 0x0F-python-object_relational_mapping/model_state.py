@@ -10,7 +10,6 @@ from sqlalchemy import Column, Integer, String
 from sqlalchemy import create_engine
 import sys
 from sqlalchemy.orm import relationship
-from model_city import City
 
 
 Base = declarative_base()
@@ -28,9 +27,7 @@ class State(Base):
     name = Column(String(128), nullable=False)
     cities = relationship("City", back_populates="state")
 
-
-engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
-                       sys.argv[1], sys.argv[2], sys.argv[3]))
-
 if __name__ == '__main__':
+    from sqlalchemy import create_engine
+
     Base.metadata.create_all(engine)
