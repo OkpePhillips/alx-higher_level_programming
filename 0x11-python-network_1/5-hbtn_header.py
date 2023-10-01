@@ -9,7 +9,7 @@ import sys
 
 if __name__ == "__main__":
     req = requests.get(sys.argv[1])
-    if req.headers['X-Request-Id']:
+    if 'X-Request-Id' in req.headers:
         print(req.headers['X-Request-Id'])
     else:
         pass
