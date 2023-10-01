@@ -9,8 +9,8 @@ import sys
 
 if __name__ == "__main__":
     data = {'q': ""}
-
-    data['q'] = sys.argv[1]
+    if len(sys.argv) >= 2:
+        data['q'] = sys.argv[1]
 
     req = requests.post('http://0.0.0.0:5000/search_user', data)
 
@@ -19,6 +19,7 @@ if __name__ == "__main__":
         if not json_object:
             print("No result")
         else:
-            print("[{}] {}".format(json_object.get('id'), json_object.get('name')))
-    except:
+            print("[{}] {}".format(json_object.get('id'),
+                                   json_object.get('name')))
+    except ValueError:
         print("Not a valid JSON")
