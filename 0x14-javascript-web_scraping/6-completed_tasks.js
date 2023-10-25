@@ -18,5 +18,5 @@ request(url, (error, response, body) => {
       }
     });
     console.log(userTasksCompleted);
-    }
+  }
 });
