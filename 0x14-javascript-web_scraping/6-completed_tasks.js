@@ -17,8 +17,6 @@ request(url, (error, response, body) => {
         }
       }
     });
-    for (const userId in userTasksCompleted) {
-      console.log(`${userId}: ${userTasksCompleted[userId]}`);
+    console.log(userTasksCompleted);
     }
-  }
 });
