@@ -10,15 +10,15 @@ request(url, (error, response, body) => {
     const userTasksCompleted = {};
     todos.forEach((task) => {
       if (task.completed) {
-	if (!userTasksCompleted[task.userId]) {
-	  userTasksCompleted[task.userId] = 1;
-	} else {
-	  userTasksCompleted[task.userId]++;
+        if (!userTasksCompleted[task.userId]) {
+          userTasksCompleted[task.userId] = 1;
+        } else {
+          userTasksCompleted[task.userId]++;
         }
       }
     });
     for (const userId in userTasksCompleted) {
-       console.log(`${userId}: ${userTasksCompleted[userId]}`);
+      console.log(`${userId}: ${userTasksCompleted[userId]}`);
     }
   }
 });
