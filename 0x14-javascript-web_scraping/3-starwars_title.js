@@ -8,6 +8,6 @@ request.get(urlpath, (error, response, body) => {
     console.error(error);
   } else {
     const film = JSON.parse(body);
-    console.log(`Title: ${film.title}`);
+    console.log(`${film.title}`);
   }
 });
